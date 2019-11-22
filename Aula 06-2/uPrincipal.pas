@@ -31,6 +31,7 @@ var
   dData1, dData2 : TDate;
   tHora1, tHora2, tTotal :TTime;
   cNome, cSobrenome, cValor1, cValor2 : string;
+  nTotSoma, nTotDiv, nTotMul, nTotSub : real;
 begin
   InputQuery('Informe o campo', 'Digite Valor 1', cValor1);
   try
@@ -47,9 +48,23 @@ begin
     ShowMessage('Variável valor 2 não é válida');
     exit
   end;
-
+  nTotSoma := nNum1 + nNum2;
+  nTotSub := nNum1 - nNum2;
+  nTotMul := nNum1 * nNum2;
+  nTotDiv := nNum1 / nNum2;
   Memo1.Lines.Add('valor da variável 1: ' + FloatToStr(nNum1));
   Memo1.Lines.Add('Valor da Variável 2: ' + FloatToStr(nNum2));
+  Memo1.Lines.Add('-----------------------------------------');
+  Memo1.Lines.Add('Soma: ' + FloatToStr(nTotSoma));
+  Memo1.Lines.Add('Subtrai: ' + FloatToStr(nTotSub));
+  Memo1.Lines.Add('Multiplica: ' + FloatToStr(nTotMul));
+  Memo1.Lines.Add('Divide: ' + FloatToStr(nTotDiv));
+
+  tHora1 := StrToTime('06:00:00');
+  tHora2 := Time;
+  tTotal := tHora2 - tHora1;
+  Memo1.Lines.Add('-----------------------------------------');
+  Memo1.Lines.Add('Total de horas: ' + TimeToStr(tTotal));
 
 end;
 
