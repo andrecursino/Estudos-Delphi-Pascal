@@ -1,0 +1,71 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 323
+  Height = 225
+  Top = 119
+  Width = 529
+  Caption = 'Aula 006'
+  ClientHeight = 225
+  ClientWidth = 529
+  LCLVersion = '2.0.6.0'
+  object edtCusto: TEdit
+    Left = 91
+    Height = 23
+    Top = 73
+    Width = 80
+    TabOrder = 0
+  end
+  object edtLucro: TEdit
+    Left = 192
+    Height = 23
+    Top = 73
+    Width = 80
+    TabOrder = 1
+  end
+  object edtVenda: TEdit
+    Left = 296
+    Height = 23
+    Top = 73
+    Width = 80
+    TabOrder = 2
+  end
+  object Label1: TLabel
+    Left = 91
+    Height = 15
+    Top = 48
+    Width = 31
+    Caption = 'Custo'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 192
+    Height = 15
+    Top = 48
+    Width = 43
+    Caption = 'Lucro %'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 296
+    Height = 15
+    Top = 48
+    Width = 32
+    Caption = 'Venda'
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 91
+    Height = 25
+    Top = 128
+    Width = 157
+    Caption = 'Calc Valor da Venda'
+    TabOrder = 3
+  end
+  object Button2: TButton
+    Left = 91
+    Height = 25
+    Top = 176
+    Width = 157
+    Caption = 'Acha % Lucro'
+    TabOrder = 4
+  end
+end
