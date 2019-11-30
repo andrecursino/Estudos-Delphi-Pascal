@@ -20,11 +20,13 @@ object TabGlobal: TTabGlobal
     Top = 48
   end
   object TCliente: TFDQuery
+    Active = True
     Connection = Conexao
     SQL.Strings = (
-      'SELECT * FROM Clientes')
+      'SELECT * FROM Clientes'
+      'ORDER BY  Nome')
     Left = 56
-    Top = 104
+    Top = 120
     object TClienteCODIGO: TIntegerField
       FieldName = 'CODIGO'
       Origin = 'CODIGO'
